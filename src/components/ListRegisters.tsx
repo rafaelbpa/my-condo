@@ -6,8 +6,6 @@ import { DatabaseProps } from '../utils/types';
 
 import TrashCan from '../assets/images/trash.svg';
 import { useNavigation } from '@react-navigation/native';
-import { RootStackParamList } from '../routes';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export const ListRegisters = (): JSX.Element => {
   const [database] = useContext(DatabaseContext);

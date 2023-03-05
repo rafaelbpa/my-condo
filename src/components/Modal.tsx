@@ -38,7 +38,7 @@ export const Modal = (): JSX.Element => {
       <View style={styles.content}>
         <TrashCan />
         <Text style={styles.title}>Deseja excluir a conta</Text>
-        <Text>
+        <Text style={styles.codeName}>
           {item?.code} - {item?.name}
         </Text>
         <View style={styles.buttonContainer}>
@@ -72,6 +72,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: colors.lightGray,
     marginTop: 21,
+  },
+  codeName: {
+    fontSize: 15,
+    color: colors.lightGray,
+    fontWeight: 'bold',
   },
   buttonContainer: {
     flexDirection: 'row',
